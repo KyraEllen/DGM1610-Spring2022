@@ -1,2 +1,7 @@
 Powder Pink
+<<<<<<< Updated upstream
 Creamsicle Orange
+=======
+Creamsicle
+>>>>>>> Stashed changes
+Buttercup Yellow
