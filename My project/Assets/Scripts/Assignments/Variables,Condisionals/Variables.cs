@@ -11,7 +11,7 @@ public class NewBaseType
     bool isRoyal = false;
     private string loginName = Cindygirl; //Strings are alpha numeric text contained in quotation marks
 
-    // Start is called before the first frame update
+    // Start is called before the first frame update 
     void Start()
     {
         money = 100;
@@ -19,7 +19,7 @@ public class NewBaseType
          
         Power = 1000;
         Debug.Log("Power in you have = " + Power); 
-    
+    }
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +31,7 @@ public class NewBaseType
         {
             print("It is Night time");
         }
-         if(isroyal == true)
+        if(isroyal == true)
         {
             print("Congrats Queen!");
         }
@@ -40,18 +40,19 @@ public class NewBaseType
             print("Sorry peasent");
         }
         if (change > 1.00f)
-
-            Debug.log("You have made a purchase");
-
-}       if(loginName == "Cindygirl")
         {
-            print("You Have Logged In!!");
+            Debug.log("You have made a purchase");
         }
-        else
+       if(loginName == "Cindygirl")
+        {
+            Debug.log("You Have Logged In!!");
+        }
+     else if("Wrong")
         {
             Debug.log("Invaild Login Name!");
         }
-
-public class Variables : NewBaseType, MonoBehaviour
-{
+    }
 }
+public class Variables : NewBaseType, MonoBehavior
+{}
+
