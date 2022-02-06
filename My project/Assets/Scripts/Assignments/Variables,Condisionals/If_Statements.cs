@@ -43,7 +43,7 @@ public class If_Statements : MonoBehaviour
         if(Weather == "Rain" || Weather == "Snow")
         {
             Debug.log("The weather is stormy you need a coat");
-        }
+        } 
         else if(Weather == "Sunny" || Weather == "Partly Cloudy")
         {
             Debug.log("You do not need a coat");
