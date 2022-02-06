@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine; 
 
-public class NewBaseType
+public class Variables : MonoBehavior
 {
     int money; //Whole number value 2,24,248
      int Power; //Whole number value 6,34,904
@@ -53,6 +53,5 @@ public class NewBaseType
         }
     }
 }
-public class Variables : NewBaseType, MonoBehavior
-{}
+
 
