@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine; 
 
-public class Variables : MonoBehavior
+public class Variables : MonoBehaviour
 {
     int money; //Whole number value 2,24,248
      int Power; //Whole number value 6,34,904
