@@ -6,7 +6,12 @@ public class CameraFollow : MonoBehaviour
 {
    public GameObject player; 
     private Vecotor3 offset = new Vector3(0,2,-4);
-
+    
+    void FixedUpdate()
+    {
+        // Follow Player position
+        transform.position = player.transform.position + offset;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +19,5 @@ public class CameraFollow : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        // Follow Player position
-        transform.position = player.transform.position + offset;
-    }
+    
 }

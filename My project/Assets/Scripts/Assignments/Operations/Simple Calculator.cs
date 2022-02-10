@@ -8,8 +8,8 @@ public class SimpleCalculator : MonoBehaviour
         public int numberB = 33;
         public int numberC = 7;
 
-         public float numberD = 33;
-        public float numberE = 7;
+         public float numberD = 33.0f;
+        public float numberE = 7.0f;
 
         // + - * / %
     // Start is called before the first frame update
