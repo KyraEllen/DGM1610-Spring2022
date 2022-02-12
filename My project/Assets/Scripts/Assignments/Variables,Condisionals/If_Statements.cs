@@ -26,40 +26,40 @@ public class If_Statements : MonoBehaviour
     void Update()
     {   
         if(lightColor == "Red")        
-            Debug.log ("The light is "+ lightColor + "STOP!!");
+            Debug.Log ("The light is "+ lightColor + "STOP!!");
 
         else if(lightColor == "Yellow")
         {
-            Debug.log("The light is "+ lightColor +" Start to stop or clear the intersection!");
+            Debug.Log("The light is "+ lightColor +" Start to stop or clear the intersection!");
         }
         else if(lightColor == "Green")
         {
-            Debug.log ("The light is "+ lightColor + "Goooooooooooo!!!"); 
+            Debug.Log ("The light is "+ lightColor + "Goooooooooooo!!!"); 
         }
         else 
         {
-            Debug.log("Wrong Color!");
+            Debug.Log("Wrong Color!");
         }
         if(Weather == "Rain" || Weather == "Snow")
         {
-            Debug.log("The weather is stormy you need a coat");
+            Debug.Log("The weather is stormy you need a coat");
         } 
         else if(Weather == "Sunny" || Weather == "Partly Cloudy")
         {
-            Debug.log("You do not need a coat");
+            Debug.Log("You do not need a coat");
         } 
         if(height == "5" && height == "6")
         {
-            Debug.log("You Are Tall Enough to Ride the Fire Dragon Coaster");
+            Debug.Log("You Are Tall Enough to Ride the Fire Dragon Coaster");
         }
         else if(height == 5 && height == 6)
         {
-            Debug.log("You are Not Tall Enough to Ride the Fire Dragon");
+            Debug.Log("You are Not Tall Enough to Ride the Fire Dragon");
         }
         
-        if(magic == Pink)
+        if(Magic is "Pink")
         {
-         Debug.log("You have love magic");
+         Debug.Log("You have love magic");
         }
         else if(Magic is "Blue")
         {
@@ -67,35 +67,35 @@ public class If_Statements : MonoBehaviour
         }
         else if(Magic is "Violet")
         {
-            Debug.log("You have space magic");
+            Debug.Log("You have space magic");
         }
         else if(Magic is "Peach")
         {
-            Debug.log("You have air magic");
+            Debug.Log("You have air magic");
         }
         else if(Magic is "Yellow")
         {
-            Debug.log("You have light magic");
+            Debug.Log("You have light magic");
         }
         else if(Magic is "Sage")
         {
-            Debug.log("You have plant magic");
+            Debug.Log("You have plant magic");
         }
         if(flowers == four || flowers == five)
         {
-            Debug.log("Your flowers don't have enough petals");
+            Debug.Log("Your flowers don't have enough petals");
         }
         else if(flowers is "six" || "seven")
         {
-            Debug.log("You have enough petals");
+            Debug.Log("You have enough petals");
         }
         if(vision == ("blurry") && vision == ("confused"))
         {
-            Debug.log("You need to find your glasses");
+            Debug.Log("You need to find your glasses");
         }
         else if(vision is ("clear") && vision is ("pretty"))
         {
-            Debug.log("Don't lose your glasses");
+            Debug.Log("Don't lose your glasses");
         }
     }
 }

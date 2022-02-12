@@ -25,20 +25,16 @@ public class SimpleCalculator : MonoBehaviour
 
         total = numberA + numberB;
         
-        Debug.log(numberA +" + "+ numberB +" = "+ total);
+        Debug.Log(numberA +" + "+ numberB +" = "+ total);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
         void Add()
         {
             int total;
 
             total = numberA + numberB;
         
-            Debug.log(numberA +" + "+ numberB +" = "+ total);
+            Debug.Log(numberA +" + "+ numberB +" = "+ total);
         }
         void Sub()
         {
@@ -46,7 +42,7 @@ public class SimpleCalculator : MonoBehaviour
 
             total = numberB - numberC;
         
-         Debug.log(numberB +" - "+ numberC +" = "+ total);
+         Debug.Log(numberB +" - "+ numberC +" = "+ total);
         }
         void Mult()
         {
@@ -54,21 +50,21 @@ public class SimpleCalculator : MonoBehaviour
 
             total = numberB * numberB;
         
-            Debug.log(numberB +" * "+ numberB +" = "+ total);
+            Debug.Log(numberB +" * "+ numberB +" = "+ total);
         }
        void Div()
         {
             int total;
-            int Rem;
+            int rem;
             float tot;
 
             total = numberB / numberC;
             rem = numberB % numberC;
             tot = numberD / numberE;
 
-            Debug.log(numberB +" / "+ numberC +" = "+ total);
-            Debug.log("Remainder ="+ rem);
-            Debug.log(numberD +" / "+ numberE +" = "+ tot);
+            Debug.Log(numberB +" / "+ numberC +" = "+ total);
+            Debug.Log("Remainder ="+ rem);
+            Debug.Log(numberD +" / "+ numberE +" = "+ tot);
         }
     
     }

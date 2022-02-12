@@ -9,7 +9,7 @@ public class Variables : MonoBehaviour
     float change = 0.32f; // Floating point number or decimal 3.25, 6.47, 14.82
     bool isDay = true;  //Booleans are true or false
     bool isRoyal = false;
-    private string loginName = Cindygirl; //Strings are alpha numeric text contained in quotation marks
+    private string loginName = "Cindygirl"; //Strings are alpha numeric text contained in quotation marks
 
     // Start is called before the first frame update 
     void Start()
@@ -31,25 +31,25 @@ public class Variables : MonoBehaviour
         {
             print("It is Night time");
         }
-        if(isroyal == true)
+        if(isRoyal is "true")
         {
             print("Congrats Queen!");
         }
-        else if(isroyal == false)
+        else if(isRoyal is "false")
         {
             print("Sorry peasent");
         }
         if (change > 1.00f)
         {
-            Debug.log("You have made a purchase");
+            Debug.Log("You have made a purchase");
         }
        if(loginName == "Cindygirl")
         {
-            Debug.log("You Have Logged In!!");
+            Debug.Log("You Have Logged In!!");
         }
      else if("Wrong")
         {
-            Debug.log("Invaild Login Name!");
+            Debug.Log("Invaild Login Name!");
         }
     }
 }

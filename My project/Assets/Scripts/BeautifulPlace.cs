@@ -13,6 +13,6 @@ public class BeautifulPlace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       Debug.log ("BeautifulPlace");
+       Debug.Log("BeautifulPlace");
     }
 }
