@@ -26,7 +26,7 @@ public class If_Statements : MonoBehaviour
     void Update()
     {   
         if(lightColor == "Red")        
-            Debug.Log ("The light is "+ lightColor + "STOP!!");
+            Debug.Log("The light is "+ lightColor + "STOP!!");
 
         else if(lightColor == "Yellow")
         {
