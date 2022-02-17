@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     {
         Vector3 spawnPos = new Vector3(Random.Range(-5,5),10,0); //random posision
         int balloonIndex = Random.Range(0,balloonPrefabs.Length); //Pick balloon
-        Instantiate(balloonPrefabs[balloonIndex], spawnPos, balloonPrefabs[balloonIndex].translate.rotation);
+        Instantiate(balloonPrefabs[balloonIndex], spawnPos, balloonPrefabs[balloonIndex].Translate.rotation);
 
     }
 }

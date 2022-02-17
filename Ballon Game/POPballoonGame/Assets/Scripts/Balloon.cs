@@ -32,7 +32,7 @@ public ScoreManager scoreMananger; // A variable to referance the ScoreManager
     
         if(clickToPop == 0)
         {
-            scoreMananger.IncreaseScoreText(scoretoGive);
+            scoreMananger.IncreaseScoreText(scoreToGive);
             Destroy(gameObject);
         }
     }
