@@ -15,7 +15,8 @@ public ScoreManager scoreMananger; // A variable to referance the ScoreManager
     // Start is called before the first frame update
     void Start()
     {
-        
+       //Reference ScoreManager Componet
+       scoreMananger = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
     // Update is called once per frame
