@@ -19,11 +19,6 @@ public ScoreManager scoreMananger; // A variable to referance the ScoreManager
        scoreMananger = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     void OnMouseDown()
     {
         // Reduce clicks by one

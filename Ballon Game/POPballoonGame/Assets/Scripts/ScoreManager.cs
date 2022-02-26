@@ -7,6 +7,7 @@ public class ScoreManager : MonoBehaviour
 {
     public int score; // Keep track of the current score
     public TextMeshProUGUI scoreText;  // Text object to be modified
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,9 +21,14 @@ public class ScoreManager : MonoBehaviour
         score += amount; 
         UpdateScoreText();
     }
+    public void DecreaseScoreText(int amount)
+    {
+        score -= amount;
+        UpdateScoreText();
+    }
     
     public void UpdateScoreText()
     {
-        scoreText.text = "Score;" + score;
+        scoreText.text = "Score; " + score;
     }
 }
