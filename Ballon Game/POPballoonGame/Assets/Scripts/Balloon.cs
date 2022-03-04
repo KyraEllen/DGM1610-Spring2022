@@ -10,7 +10,7 @@ public class Balloon : MonoBehaviour
 
     public float scaleToIncrease = 0.1f; // Scale increase each time the ballon is clicked
 
-public ScoreManager scoreMananger; // A variable to referance the ScoreManager
+    public ScoreManager scoreMananger; // A variable to referance the ScoreManager
 
     // Start is called before the first frame update
     void Start()
