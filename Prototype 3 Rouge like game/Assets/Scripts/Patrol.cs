@@ -4,46 +4,41 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
-    public float speed;
+  public float speed;
    
-    private float waitTime;
+  private float waitTime;
     
-    public float startWaitTime;
-
-    public Transform startPoint; 
-    
-    public float minX;
-
-    public float maxX;
-
-    public float minY;
-    
-    public float maxY;
+  public float startWaitTime;
+  public Transform startPoint; 
+  public float minX;
+  public float maxX;
+  public float minY;
+  public float maxY;
 
     // Start is called before the first frame update
     void Start()
     {
-        waitTime = startWaitTime;
+      waitTime = startWaitTime;
 
-        startPoint.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxX));
+      startPoint.position = new Vector2(Random.Range(minX, maxX), Random.Range(minY, maxX));
     }
 
     // Update is called once per frame
     void Update()
-    {
-      transform.position = Vector2.MoveTowards(transform.position, startPoint, speed * Time.deltaTime);
+  {
+      transform.position = Vector2.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
 
       if(Vector2.Distance(transform.position, startPoint.position) < 0.2f)
+    {
+        if(waitTime <= 0)
       {
-          if(waitTime <= 0)
-        {
-          startPoint.position =new Vector2(Random.Range (minx, maxX), Random.Range (minY, maxX));
+        startPoint.position =new Vector2(Random.Range (minX, maxX), Random.Range (minY, maxX));
         waitTime = startWaitTime;
-        }
+      }
         else
-        {
-            waitTime -= waitTime.deltaTime;
-        }
-      }  
-    }
+      {
+        waitTime -= Time.deltaTime;
+      }
+    }  
+  }
 }
