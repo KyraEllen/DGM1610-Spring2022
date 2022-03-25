@@ -9,23 +9,27 @@ public class Enemy : MonoBehaviour
     public int maxHP;
     [Header("Enemy Attack")]
     public int damage;
-    public float AttackRate;
+    public float attackRange;
+    public float attackRate;
     private float lastAttackTime;
     public PlayerController player;
     // Start is called before the first frame update
     void Start()
     {
-        player = gameObject.find("Player").GetComponent<PlayerController>();
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
+    
     void Update()
     {
-       if(Time.time - lastAttackTime >= attackRate)
+       if(Time.time - lastAttackTime >= attackRate && Vector2.Distance(transform.position, player.transform.position) < attackRange)
        {
            Attack();
        } 
     }
+    
+    
     public void TakeDamage(int damage)
     {
         curHP -= damage; // is the same as curHP = curHp - damage
@@ -38,10 +42,10 @@ public class Enemy : MonoBehaviour
     void Attack()
     {
         lastAttackTime = Time.time;
-        Player.TakeDamage(damage);
+        PlayerController.TakeDamage(damage);
     }
 
-    public void Death()
+    void Death()
     {
         Destroy(gameObject);
     }
