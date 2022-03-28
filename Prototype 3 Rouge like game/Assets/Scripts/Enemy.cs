@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
     void Attack()
     {
         lastAttackTime = Time.time;
-        PlayerController.TakeDamage(damage);
+        player.TakeDamage(damage);
     }
 
     void Death()

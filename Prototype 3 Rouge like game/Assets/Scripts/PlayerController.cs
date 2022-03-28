@@ -14,11 +14,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 movement; //Store the player's x,y position for movement 
     private Vector2 direction;
 
+   
+   
+   
     [Header ("Player Combat")]
+    public int damage; //Damage amount to enemy
     public float attackRange; //Range at which the player can attack
     public float attackRate;
     private float lastAttackTime;
-    public int damage; //Damage amount to enemy
     public LayerMask enemyLayer;
 
 
@@ -36,7 +39,7 @@ public class PlayerController : MonoBehaviour
    
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            if(Time.time = lastAttackTime >= attackRate)
+            if(Time.time - lastAttackTime >= attackRate)
                 Attack();
         }
     }
@@ -50,8 +53,9 @@ public class PlayerController : MonoBehaviour
 
     }
     void UpdateDirection()
+
     {
-        Vector2 vel = new Vector2(movement,x,movement,y); //vel stands for velocity
+        Vector2 vel = new Vector2(movement.x,movement.y); //vel stands for velocity
 
         if(vel.magnitude != 0)
         {
@@ -61,6 +65,7 @@ public class PlayerController : MonoBehaviour
         rb.velocity = vel * moveSpeed;
     }
 
+   
     void Attack() //If you do not have public or private declared it is private by default
     {
         lastAttackTime = Time.time;
