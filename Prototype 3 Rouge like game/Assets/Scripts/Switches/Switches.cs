@@ -18,7 +18,11 @@ public class Switches : MonoBehaviour
 
     public bool crossRiver;
 
-    public float 
+    public float keys;
+
+    public string shop;
+
+    public int monsterLevel;
 
     void Start()
     {
@@ -32,6 +36,15 @@ public class Switches : MonoBehaviour
             break;
             case "We are being attacked":
             print("YOu run away in shame, you coward!");
+            break;
+            case "Suplies":
+            print("Hello good citizen! What would you like to buy today?");
+            break;
+            case "Monster":
+            print("Gggggggggggrrrrrr!");
+            break;
+            case "Chicken":
+            print("Bakwack!");
             break;
         }
 
@@ -154,8 +167,68 @@ public class Switches : MonoBehaviour
             print("YOu can cross on the bridge or the boat.");
             break;
             default:
-            print("Don't you wonder what treasures lie on the other side of the river?");
+            print("Don't you wonder what treasures are on the other side of the river?");
             break;
         }
+        switch(keys)
+        {
+            case 5:
+            Debug.log("You have all the keys you can go open the door!");
+            break;
+            case 4:
+            Debug.log("You need one more key. I heard it was on top of the montain.");
+            break;
+            case 3:
+            Debug.log("You still need to find two keys the next one should be in the forest.");
+            break;
+            case 2:
+            Debug.log("You still need to find three keys the next key is in the lake.");
+            break;
+            case 1:
+            Debug.log("You still need to find four keys, the next key is in the meadow.");
+            break;
+            default:
+            Debug.log("If you want to open the door you must find all five keys. The first is in town hall");
+            break;
+        }
+         switch(shop)
+        {
+            case "Snowing":
+            print("It's chilly would you like to buy a hot chocolate?");
+            break;
+            case "Rain":
+            print("It's wet would you like to buy an umbrella?");
+            break;
+            case "Windy":
+            print("It's windy would you like to buy a wind breaker?");
+            break;
+            case "Sunny":
+            print("It's sunny would you like to buy some sunblock?");
+            break;
+            case "Cloudy":
+            print("It's cloudy would you like to buy a cloud?");
+            break;
+        }
+        switch(monsterLevel)
+        {
+            case 5:
+            Debug.log("You need an entire party with masterskills to beat this monster.");
+            break;
+            case 4:
+            Debug.log("You might wanna couple of friends before trying to take on this guy.");
+            break;
+            case 3:
+            Debug.log("You'll want a friend to help you with this monster.");
+            break;
+            case 2:
+            Debug.log("You need a strong sword to beat this monster.");
+            break;
+            case 1:
+            Debug.log("You can beat this monster.");
+            break;
+            default:
+            Debug.log("This is barely a monster.");
+            break;
+
     }
 }
