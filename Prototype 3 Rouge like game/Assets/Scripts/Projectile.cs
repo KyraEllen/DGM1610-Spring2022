@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DangerDots : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     public float speed;
 
     private Transform player;
 
     private Vector2 target;
+
+    private PlayerController playerController;
+
+    public int damage;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +28,7 @@ public class DangerDots : MonoBehaviour
 
         if(transform.position.x == target.x && transform.position.y == target.y)
         {
-            DestroyDangerDots();
+            DestroyProjectile();
         }
     }
     
@@ -32,11 +36,11 @@ public class DangerDots : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            DestroyDangerDots();
+            DestroyProjectile();
         }
     }
 
-    void DestroyDangerDots
+    void DestroyProjectile()
     {
         Destory(gameObject);
     }

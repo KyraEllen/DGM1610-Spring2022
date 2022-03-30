@@ -51,40 +51,40 @@ public class Switches : MonoBehaviour
         switch(socialClass)
         {
             case 5:
-            Debug.log("Hello, your Majesty!");
+            Debug.Log("Hello, your Majesty!");
             break;
             case 4:
-            Debug.log("Hello Young Princess Alexandrea!");
+            Debug.Log("Hello Young Princess Alexandrea!");
             break;
             case 3:
-            Debug.log("Good evening Duchess Farington");
+            Debug.Log("Good evening Duchess Farington");
             break;
             case 2:
-            Debug.log("Hello, Knight Cassandra!");
+            Debug.Log("Hello, Knight Cassandra!");
             break;
             case 1:
-            Debug.log("May I purchase some of your fine potatos");
+            Debug.Log("May I purchase some of your fine potatos");
             break;
             case 0:
-            Debug.log("Stay away from me traitor");
+            Debug.Log("Stay away from me traitor");
             break;
             default:
-            Debug.log("I don't talk with strangers");
+            Debug.Log("I don't talk with strangers");
             break;
         }
             switch(milk)
         {
-            case "false-false":
+            case false-false: 
             print("You are lactose intolerance or hate cows");
             break;
-            case "false-true":
+            case false-true:
             print("You don't like chocolate milk but you do like regular milk");
             break;
-            case "true-false":
+            case true-false:
             print("You like chocolate milk but not regular milk");
             break;
-            case "true-true":
-            print("You love all milk and cute cows");
+            case true-true:
+            print("You love all milk and think cows cute.");
             break;
             default:
             print("You aren't thristy");
@@ -93,19 +93,19 @@ public class Switches : MonoBehaviour
             switch(grade)
         {
             case 90:
-            Debug.log("You got an A!");
+            Debug.Log("You got an A!");
             break;
             case 80:
-            Debug.log("You got a B!");
+            Debug.Log("You got a B!");
             break;
             case 70:
-            Debug.log("You got a C.");
+            Debug.Log("You got a C.");
             break;
             case 60:
-            Debug.log("You got a D");
+            Debug.Log("You got a D");
             break;
             default:
-            Debug.log("You failed.")
+            Debug.Log("You failed.");
             break;
         }
            
@@ -131,40 +131,44 @@ public class Switches : MonoBehaviour
             switch(age)
         {
             case 18:
-            Debug.log("Congrats you are an adult!");
+            Debug.Log("Congrats you are an adult!");
             break;
             case 16:
-            Debug.log("You can now drive!");
+            Debug.Log("You can now drive!");
             break;
             case 13:
-            Debug.log("Technically a teen");
+            Debug.Log("Technically a teen");
             break;
             case 12:
-            Debug.log("Akward tweenager");
+            Debug.Log("Akward tweenager");
             break;
             case 7:
-            Debug.log("A Child");
+            Debug.Log("A Child");
             break;
             case 2:
-            Debug.log("It's a baby.");
+            Debug.Log("It's a baby.");
             break;
             default:
-            Debug.log("Are you immortal?");
+            Debug.Log("Are you immortal?");
             break;
         }
                switch(crossRiver)
         {
-            case "false-false":
+            case false:
             print("You don't have what you need to cross this river");
             break;
-            case "false-true":
-            print("You can walk across the bridge but you can't take the boat it has a hole in it.");
+            case bridge:
+            {
+            print("You can walk across the bridge but you can't take the boat it has a hole in it.");    
+            }
             break;
-            case "true-false":
-            print("The bridge is broken but you can cross on the boat.");
+            case true:
+            print("You can cross on the bridge or the boat.");
             break;
-            case "true-true":
-            print("YOu can cross on the bridge or the boat.");
+            case boat:
+            {
+                print("The bridge is broken but you can cross on the boat.");
+            }
             break;
             default:
             print("Don't you wonder what treasures are on the other side of the river?");
@@ -173,22 +177,22 @@ public class Switches : MonoBehaviour
         switch(keys)
         {
             case 5:
-            Debug.log("You have all the keys you can go open the door!");
+            Debug.Log("You have all the keys you can go open the door!");
             break;
             case 4:
-            Debug.log("You need one more key. I heard it was on top of the montain.");
+            Debug.Log("You need one more key. I heard it was on top of the montain.");
             break;
             case 3:
-            Debug.log("You still need to find two keys the next one should be in the forest.");
+            Debug.Log("You still need to find two keys the next one should be in the forest.");
             break;
             case 2:
-            Debug.log("You still need to find three keys the next key is in the lake.");
+            Debug.Log("You still need to find three keys the next key is in the lake.");
             break;
             case 1:
-            Debug.log("You still need to find four keys, the next key is in the meadow.");
+            Debug.Log("You still need to find four keys, the next key is in the meadow.");
             break;
             default:
-            Debug.log("If you want to open the door you must find all five keys. The first is in town hall");
+            Debug.Log("If you want to open the door you must find all five keys. The first is in town hall");
             break;
         }
          switch(shop)
@@ -212,23 +216,23 @@ public class Switches : MonoBehaviour
         switch(monsterLevel)
         {
             case 5:
-            Debug.log("You need an entire party with masterskills to beat this monster.");
+            Debug.Log("You need an entire party with masterskills to beat this monster.");
             break;
             case 4:
-            Debug.log("You might wanna couple of friends before trying to take on this guy.");
+            Debug.Log("You might wanna couple of friends before trying to take on this guy.");
             break;
             case 3:
-            Debug.log("You'll want a friend to help you with this monster.");
+            Debug.Log("You'll want a friend to help you with this monster.");
             break;
             case 2:
-            Debug.log("You need a strong sword to beat this monster.");
+            Debug.Log("You need a strong sword to beat this monster.");
             break;
             case 1:
-            Debug.log("You can beat this monster.");
+            Debug.Log("You can beat this monster.");
             break;
             default:
-            Debug.log("This is barely a monster.");
+            Debug.Log("This is barely a monster.");
             break;
-
+        }
     }
 }
