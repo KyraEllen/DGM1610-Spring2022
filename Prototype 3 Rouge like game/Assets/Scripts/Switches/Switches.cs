@@ -8,8 +8,6 @@ public class Switches : MonoBehaviour
 
     public int socialClass =1;
 
-    public bool milk;
-
     public float grade; 
 
     public string animals;
@@ -23,6 +21,8 @@ public class Switches : MonoBehaviour
     public string shop;
 
     public int monsterLevel;
+
+    public float health;
 
     void Start()
     {
@@ -70,24 +70,6 @@ public class Switches : MonoBehaviour
             break;
             default:
             Debug.Log("I don't talk with strangers");
-            break;
-        }
-            switch(milk)
-        {
-            case false-false: 
-            print("You are lactose intolerance or hate cows");
-            break;
-            case false-true:
-            print("You don't like chocolate milk but you do like regular milk");
-            break;
-            case true-false:
-            print("You like chocolate milk but not regular milk");
-            break;
-            case true-true:
-            print("You love all milk and think cows cute.");
-            break;
-            default:
-            print("You aren't thristy");
             break;
         }
             switch(grade)
@@ -157,18 +139,8 @@ public class Switches : MonoBehaviour
             case false:
             print("You don't have what you need to cross this river");
             break;
-            case bridge:
-            {
-            print("You can walk across the bridge but you can't take the boat it has a hole in it.");    
-            }
-            break;
             case true:
             print("You can cross on the bridge or the boat.");
-            break;
-            case boat:
-            {
-                print("The bridge is broken but you can cross on the boat.");
-            }
             break;
             default:
             print("Don't you wonder what treasures are on the other side of the river?");
@@ -232,6 +204,30 @@ public class Switches : MonoBehaviour
             break;
             default:
             Debug.Log("This is barely a monster.");
+            break;
+        }
+        switch(health)
+        {
+            case 5:
+            Debug.Log("You have full health!");
+            break;
+            case 4:
+            Debug.Log("You have 4 heart watch and see what hurts you.");
+            break;
+            case 3:
+            Debug.Log("You have 3 hearts, if you drink a health potion you will be to full health.");
+            break;
+            case 2:
+            Debug.Log("You only have 2 hearts left be careful.");
+            break;
+            case 1:
+            Debug.Log("You only have one heart left if you lose all of them you'll die.");
+            break;
+            case 0:
+            Debug.Log("You died.");
+            break;
+            default:
+            Debug.Log("Careful with your hearts.");
             break;
         }
     }

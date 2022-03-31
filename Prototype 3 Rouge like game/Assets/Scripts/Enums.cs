@@ -7,7 +7,13 @@ public class Enums : MonoBehaviour
     enum Color {periwinkle = 0, rose = 1, buttercup = 2, pea = 3, peach = 4, lavander =5};
     enum CarMake {Oldsmobile, Chevrolet, Ford, Mazda, Toyota, Dodge};
     enum CarModel {Alero, Cruza, Tacoma, Mustang, Miata, Viper};
-
+    enum Tires {WhiteWall, Dual, Classic, Snow};
+    enum Interior {White, Saddleback, Vinyl, Leather};
+    enum Transmission {manuel, automatic};
+    enum LicensePlate {InGodWeTrust, LifeElevatedSkier, LifeElevatedArches, Olympic};
+    enum AirFreshener {BlackIce, DaisyFields, BaysideBreeze, PureSteel, Leather, NewCar, RainShine, Sliced};
+    enum Year {1940, 1950, 1960, 1970, 1980, 1990,2000, 2010};
+    enum Stereos {CD, Cassette, Bluetooth, AuxCord, Radio};
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +32,7 @@ public class Enums : MonoBehaviour
 
         
         //print("Car Manufacture:" + make + " Model:"+ model);
-        Recall(CarMake.Mazda,Miata)
+        Recall(CarMake.Mazda,Miata);
     
     }
 
@@ -34,6 +40,69 @@ public class Enums : MonoBehaviour
     void Update()
     {
         
+    }
+     void Recall(LicensePlate plate, Transmission transmission)
+    {
+        if(plate == LicensePlate.Olympic && transmission == Transmission.manuel)
+        {
+            print("Living for the good old times eh?");
+        }
+        if(plate == LicensePlate.LifeElevatedArches && transmission == Transmission.automatic)
+        {
+            print("You are not one to make many waves.");
+        }
+        else
+        {
+            print("Well you need a transmission to drive and you should have plates or you'll get pulled over.");
+        }
+    }
+
+     void Recall(AirFreshener scent, Stereos stereo)
+    {
+        if(scent == AirFreshener.BaysideBreeze && stereo == Stereos.Cassette)
+        {
+            print("How are you enjoying retirement?");
+        }
+        if(scent == AirFreshener.NewCar && stereo == Stereos.AuxCord)
+        {
+            print("You are clean slick and fressh.");
+        }
+        else
+        {
+            print("Glad you are smelling good and have toons.");
+        }
+    }
+    
+    void Recall(Color color, Interior interior)
+    {
+        if(interior == Interior.White && color == Color.buttercup)
+        {
+            print("You sound like sunshine but be careful to keep your car clean.");
+        }
+        if(interior == Interior.Saddleback && color == Color.rose)0)
+        {
+            print("This better be a truck.");
+        }
+        else
+        {
+            print("I like your style!");
+        }
+    }
+
+    void Recall(Tires tires, Year year)
+    {
+        if(tires == Tires.WhiteWall && year == Year.1940)
+        {
+            print("You good Sir have a crazy classy car.");
+        }
+       if(tires == Tires.Dual && year == Year.1980)
+        {
+            print("You are a trucker that is running with the times.");
+        }
+        else
+        {
+            print("You have a car yay!");
+        }
     }
 
     void Recall(CarMake make, CarModel model)
