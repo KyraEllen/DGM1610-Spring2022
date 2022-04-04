@@ -12,7 +12,7 @@ public class Enums : MonoBehaviour
     enum Transmission {manuel, automatic};
     enum LicensePlate {InGodWeTrust, LifeElevatedSkier, LifeElevatedArches, Olympic};
     enum AirFreshener {BlackIce, DaisyFields, BaysideBreeze, PureSteel, Leather, NewCar, RainShine, Sliced};
-    enum Year {1940, 1950, 1960, 1970, 1980, 1990,2000, 2010};
+    enum Age {Vintage, Retro, Recent, New}
     enum Stereos {CD, Cassette, Bluetooth, AuxCord, Radio};
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,7 @@ public class Enums : MonoBehaviour
         {
             print("Living for the good old times eh?");
         }
-        if(plate == LicensePlate.LifeElevatedArches && transmission == Transmission.automatic)
+        else if(plate == LicensePlate.LifeElevatedArches && transmission == Transmission.automatic)
         {
             print("You are not one to make many waves.");
         }
@@ -57,13 +57,13 @@ public class Enums : MonoBehaviour
         }
     }
 
-     void Recall(AirFreshener scent, Stereos stereo)
+    void Recall(AirFreshener scent, Stereos stereo)
     {
         if(scent == AirFreshener.BaysideBreeze && stereo == Stereos.Cassette)
         {
             print("How are you enjoying retirement?");
         }
-        if(scent == AirFreshener.NewCar && stereo == Stereos.AuxCord)
+        else if(scent == AirFreshener.NewCar && stereo == Stereos.AuxCord)
         {
             print("You are clean slick and fressh.");
         }
@@ -79,7 +79,7 @@ public class Enums : MonoBehaviour
         {
             print("You sound like sunshine but be careful to keep your car clean.");
         }
-        if(interior == Interior.Saddleback && color == Color.rose)0)
+        else if(interior == Interior.Saddleback && color == Color.rose);
         {
             print("This better be a truck.");
         }
@@ -89,13 +89,13 @@ public class Enums : MonoBehaviour
         }
     }
 
-    void Recall(Tires tires, Year year)
+    void Recall(Tires tires, Age year)
     {
-        if(tires == Tires.WhiteWall && year == Year.1940)
+        if(tires == Tires.WhiteWall && age == Age.Vintage)
         {
             print("You good Sir have a crazy classy car.");
         }
-       if(tires == Tires.Dual && year == Year.1980)
+        else if(tires == Tires.Dual && year == Age.Retro)
         {
             print("You are a trucker that is running with the times.");
         }
