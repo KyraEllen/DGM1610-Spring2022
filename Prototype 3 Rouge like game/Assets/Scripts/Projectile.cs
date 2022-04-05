@@ -42,6 +42,6 @@ public class Projectile : MonoBehaviour
 
     void DestroyProjectile()
     {
-        Destory(gameObject);
+        Destroy(gameObject);
     }
 }

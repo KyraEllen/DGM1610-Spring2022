@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Enums : MonoBehaviour
 {
     enum Color {periwinkle = 0, rose = 1, buttercup = 2, pea = 3, peach = 4, lavander =5};
@@ -17,11 +18,11 @@ public class Enums : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      /* Color paint;
-        paint = Color.periwinkle
+       Color paint;
+        paint = Color.periwinkle;
 
         print(paint);
-    */
+    
       
         CarMake make;
         
@@ -32,7 +33,7 @@ public class Enums : MonoBehaviour
 
         
         //print("Car Manufacture:" + make + " Model:"+ model);
-        Recall(CarMake.Mazda,Miata);
+        //Recall(CarMake.Mazda,Miata);
     
     }
 
@@ -79,7 +80,7 @@ public class Enums : MonoBehaviour
         {
             print("You sound like sunshine but be careful to keep your car clean.");
         }
-        else if(interior == Interior.Saddleback && color == Color.rose);
+        else if(interior == Interior.Saddleback && color == Color.rose)
         {
             print("This better be a truck.");
         }
@@ -89,13 +90,13 @@ public class Enums : MonoBehaviour
         }
     }
 
-    void Recall(Tires tires, Age year)
+    void Recall(Tires tires, Age age)
     {
         if(tires == Tires.WhiteWall && age == Age.Vintage)
         {
             print("You good Sir have a crazy classy car.");
         }
-        else if(tires == Tires.Dual && year == Age.Retro)
+        else if(tires == Tires.Dual && age == Age.Retro)
         {
             print("You are a trucker that is running with the times.");
         }
@@ -111,7 +112,7 @@ public class Enums : MonoBehaviour
         {
             print("There is a recall on your vehicle due to being a Ford, please take your care to the nearest dealer for repairs.");
         }
-        else if(make == CarMake.Toyota && model == CarModel.Tacoma);
+        else if(make == CarMake.Toyota && model == CarModel.Tacoma)
         {
             print("There is a recall on your vehicle due to a faulty ignition, please take your care to the nearest dealer for repairs.");
         }
@@ -120,4 +121,4 @@ public class Enums : MonoBehaviour
             print("There is no recall notice for your vehicle's make and model");
         }
     }
-}
+} 

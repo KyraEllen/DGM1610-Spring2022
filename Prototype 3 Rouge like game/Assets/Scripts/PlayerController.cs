@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     [Header ("Player Health")]
     public int curHP;
     public int maxHP;
+    public HealthBar healthBar;
+
 
     [Header ("Player Movement")]
     public float moveSpeed = 5f; //Speed at which the player will move
@@ -29,6 +31,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
        rb = GetComponent<Rigidbody2D>(); 
+
+       curHP = maxHP;
+       healthBar.SetHealth(maxHP);
     }
 
     // Update is called once per frame
@@ -81,6 +86,8 @@ public class PlayerController : MonoBehaviour
      public void TakeDamage(int damage)
     {
         curHP -= damage; // is the same as curHP = curHp - damage
+        // Updates the health bat by current HP
+        healthBar.SetHealth(curHP);
         if(curHP <= 0)
         {
             Death(); //If there is only one line after an if statement technically you don't need brackets 
