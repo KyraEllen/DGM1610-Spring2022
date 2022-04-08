@@ -15,9 +15,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb; //store the referenced 2D rigidbody
     private Vector2 movement; //Store the player's x,y position for movement 
     private Vector2 direction;
-
-   
-   
    
     [Header ("Player Combat")]
     public int damage; //Damage amount to enemy
@@ -26,7 +23,10 @@ public class PlayerController : MonoBehaviour
     private float lastAttackTime;
     public LayerMask enemyLayer;
 
-
+    [Header ("Inventory")]
+    public int key;
+    public int coins;
+    public int gem;
     // Start is called before the first frame update
     void Start()
     {

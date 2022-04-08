@@ -13,6 +13,10 @@ public class Enemy : MonoBehaviour
     public float attackRate;
     private float lastAttackTime;
     public PlayerController player;
+
+    [Header("Loot Drop")]
+    public GameObject lootDrop;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +37,13 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         curHP -= damage; // is the same as curHP = curHp - damage
+        
         if(curHP <= 0)
         {
             Death(); //If there is only one line after an if statement technically you don't need brackets 
         }
-
     }
+
     void Attack()
     {
         lastAttackTime = Time.time;
@@ -48,5 +53,10 @@ public class Enemy : MonoBehaviour
     void Death()
     {
         Destroy(gameObject);
+    }
+
+    void LootDrop()
+    {
+      Instantiate(lootDrop, transform.position, Quaternion.identity);
     }
 }
