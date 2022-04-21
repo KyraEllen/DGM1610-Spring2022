@@ -12,7 +12,7 @@ public class PlayerController2D : MonoBehaviour
     [Header("Groundcheck")]
     private bool isGrounded;
     public Transform groundCheck;
-    public Transform groundCheckRadius;
+    public float groundCheckRadius;
     public LayerMask whatIsGround;
 
     private float moveVelocity;
