@@ -61,14 +61,14 @@ public class PlayerController : MonoBehaviour
 
     {
         Vector2 vel = new Vector2(movement.x,movement.y); //vel stands for velocity
-
+//
         if(vel.magnitude != 0)
         {
-            direction = vel;
+    //        direction = vel;
         }
         
         rb.velocity = vel * moveSpeed;
-    }
+  //  }
 
    
     void Attack() //If you do not have public or private declared it is private by default
